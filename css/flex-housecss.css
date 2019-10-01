@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.house{
+  display: flex;
+  flex-direction: column;
+}
+
+.house__roof {
+  width: 0;
+  height: 0;
+  border-bottom: 250px solid #311c17;
+  border-left: 252px solid white;
+  border-right: 252px solid white;
+}
+
+.house__chimney {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 15px;
+}
+
+.house-chimney_position_top {
+  background: #5b4e4e;
+  border: 2px solid black;
+  width: 50px;
+  height: 10px;
+}
+
+.house-chimney_position_bot {
+  background: #5b4e4e;
+  border: 2px solid black;
+  border-bottom: transparent;
+  width: 40px;
+  height: 150px;
+}
+
+.house__wall {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 500px;
+  border: 2px solid black;
+  background: #c6a576;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.house__windows {
+  display: flex;
+  margin-top: 30px;
+  align-self: stretch;
+  justify-content: space-around;
+  padding: 0 45px;
+}
+
+.house__windows-column{
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.house__window-first, .house__window-second, .house__window-third,
+.house__window-fourth, .house__window-fifth {
+  flex-shrink: 0;
+  background: #76bcc6;
+  width: 65px;
+  height: 65px;
+  border: 3px solid black;
+}
+
+.house__window-second, .house__window-fifth {
+  margin-top: 65px;
+}
+
+.house__window-third {
+  border-radius: 100px;
+}
+
+.house__window-frame_direction-h, .house__window-frame_direction-v {
+  margin-top: 28px;
+  border-top: 3px solid black;
+}
+
+.house__window-frame_direction-v {
+  margin-top: 0px;
+  transform: rotate(90deg);
+}
+
+.house__door {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  align-items: center;
+  background: #2f1e0f;
+  border: 2px solid black;
+  width: 100px;
+  height: 180px;
+  margin-top: -89px;
+}
+
+.house__door-handle {
+  background: #e7cd1d;
+  width: 20px;
+  height: 5px;
+  transform: rotate(5deg);
+}
