@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: black;
+}
+
+.cubes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cubes *{
+    height: 100px;
+    width: 100px;
+}
+
+.first_cube{
+    background: red;
+}
+
+.second_cube{
+    background: green;
+}
+
+.third_cube{
+    background: blue;
+}
+
+@media (orientation: portrait){
+    .cubes *{
+        margin-top: 10px;
+    }
+    .cubes{
+        flex-direction: column;
+        align-items: center;
+    }
+    .second_cube{
+        order: 1;
+    }
+}
+
+@media (max-height: 768px) and (orientation: portrait){
+    .cubes *{
+        margin-top: 10px;
+        background: white;
+    }
+}
