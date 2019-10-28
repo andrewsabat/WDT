@@ -1,0 +1,256 @@
+html
+  font-size: 10px
+
+.main-header
+  @extend %flex
+  color: rgba(215, 121, 74, 0.8)
+  align-items: center
+  font-size: 2.5rem
+  font-family: $main-font
+  padding-left: 3%
+  width: 100%
+  height: 118px
+
+.banner
+  @extend %flex
+  flex-direction: column
+  height: 770px
+  justify-content: space-between
+  background-image: url(../img/skyscrapers.jpg)
+  background-position: center
+  background-size: cover
+
+nav
+  background-color: rgba(0, 0, 0, 0.4)
+
+  ui
+    @extend %flex
+    align-items: center
+    text-transform: uppercase
+    font-size: 2rem
+    list-style: none
+    height: 75px
+    padding-left: 3%
+
+    li
+      height: inherit
+
+.nav-link
+  @extend %flex
+  align-items: center
+  height: inherit
+  text-decoration: none
+  color: #fff
+  font-family: $main-font
+  padding: 0 1vw
+  transition: 0.3s
+
+  &:hover
+    color: #000
+    background-color: rgba(255, 255, 255, 0.7)
+
+.banner__title
+  @extend %flex
+  height: 100%
+  width: 100%
+  padding-right: 7%
+  padding-bottom: 5%
+  flex-direction: column
+  align-items: flex-end
+  justify-content: flex-end
+
+  h1
+    text-align: center
+    font-weight: normal
+    font-size: 7.8rem
+    color: #fff
+
+  h2
+    font-weight: normal
+    font-size: 4.7rem
+    color: rgb(215, 121, 74)
+
+.table
+  @extend %flex
+  flex-direction: column
+  min-height: 1400px
+  margin-bottom: 200px
+
+.table__head
+  @extend %flex
+  flex-direction: column
+  align-items: center
+  margin-top: 14.5%
+
+  h1
+    text-align: center
+    font-weight: normal
+    font-size: 6rem
+    color: rgb(169, 94, 57)
+    border-bottom: 1px solid rgb(169, 94, 57)
+    padding-bottom: 22px
+
+  p
+    text-align: center
+    font-family: $main-font
+    font-size: 3.2rem
+    width: 60%
+    margin-top: 85px
+
+.table__leaders
+  @extend %flex
+  justify-content: center
+  margin-top: 125px
+
+.table__leader
+  @extend %flex
+  flex-direction: column
+  align-items: center
+  width: 28.5%
+  height: inherit
+
+  img
+    width: 23.5vw
+    height: 29.5vw
+    object-fit: cover
+
+  h1
+    font-size: 3.2rem
+    font-family: $main-font
+    font-weight: normal
+    margin-top: 38px
+
+  p
+    text-align: center
+    font-size: 2rem
+    font-family: $main-font
+    width: 70%
+    margin: 43px 0
+
+.main-footer
+  @extend %flex
+  flex-direction: column
+  min-height: 390px
+
+.footer-top
+  min-height: 300px
+  background-color: #0b2a33
+
+.footer-top-container
+  @extend %flex
+  height: inherit
+  margin: 0 10px
+
+.footer-top-content-left
+  @extend %flex
+  justify-content: space-between
+  height: inherit
+  width: 85%
+  font-family: $main-font
+  padding: 70px 5vw
+
+.footer__title
+  font-size: 2.2rem
+  margin-bottom: 30px
+  color: #ececec
+  border-bottom: 1px solid #fff
+
+.footer__list
+  margin-right: 10px
+
+  ui
+    list-style: none
+
+    li
+      margin-bottom: 15px
+
+      a
+        &:hover
+          color: #ffffff
+
+        font-size: 2.2rem
+        text-decoration: none
+        color: #d2d3d7
+
+.footer-top-content-right
+  @extend %flex
+  flex-direction: column
+  justify-content: center
+  margin-right: 10px
+
+.footer__numbers, .footer__locations
+  @extend %flex
+  align-items: center
+  margin-bottom: 10px
+
+.footer-top-content-right img
+  height: 20px
+  width: 20px
+  filter: invert(100%)
+  margin-right: 20px
+
+.footer__numbers ui, .footer__locations ui
+  list-style: none
+
+.footer__numbers ui li, .footer__locations ui li
+  font-size: 1.8rem
+  color: #eaeaea
+  margin-bottom: 5px
+
+.footer__numbers ui li a
+  text-decoration: none
+  color: #eaeaea
+
+.footer-bottom
+  @extend %flex
+  align-items: center
+  justify-content: center
+  background-color: #000
+  min-height: 90px
+  width: 100%
+
+.footer-bottom-container
+  @extend %flex
+  justify-content: space-around
+  min-height: inherit
+  width: inherit
+  margin: 0 10px
+
+.footer-bottom-content-left
+  @extend %flex
+  align-items: center
+
+.copyright-info p
+  font-size: 2.2rem
+  color: #fff
+
+.footer-bottom-content-right
+  @extend %flex
+  margin: 0 10px
+  align-items: center
+
+  ui
+    @extend %flex
+
+    li
+      @extend %flex
+      height: 35px
+      width: 35px
+      margin-right: 10px
+
+      a
+        @extend %flex
+        justify-content: center
+        align-items: center
+        height: inherit
+        width: inherit
+        border: 1px solid #fff
+        border-radius: 5px
+
+.social-networks
+  @extend %flex
+
+.footer-bottom-content-right img
+  height: 25px
+  width: 25px
+  filter: invert(100%)
