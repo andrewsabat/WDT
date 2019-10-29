@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+.triange1 {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-bottom: 65px solid red;
+    animation: anim1 5s infinite linear;
+}
+.triange2 {
+    position: relative;
+    top: 90vh;
+    left: 90vw;
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-top: 65px solid blue;
+    animation: anim2 5s infinite linear;
+}
+@keyframes anim1 {
+    10%{
+        transform: translate(49vw, 38vh);
+    }
+    90%{
+        transform: translate(49vw, 38vh);
+    }
+}
+@keyframes anim2 {
+    10%{
+        transform: translate(-41vw, -55vh);
+    }
+    90%{
+        transform: translate(-41vw, -55vh);
+    }
+}
